@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/id_card_menu_add"
+        android:icon="@android:drawable/ic_input_add"
+        android:title="@string/add"
+        app:showAsAction="always"/>
+    <!--<item-->
+    <!--android:id="@+id/id_card_menu_sort"-->
+    <!--android:icon="@android:drawable/ic_menu_sort_by_size"-->
+    <!--android:title="@string/sort"-->
+    <!--app:showAsAction="always"/>-->
+    <item
+        android:id="@+id/id_sort_card"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:title="@string/sort"
+        app:showAsAction="always">
+    </item>
+    <item
+        android:id="@+id/id_get_arhive"
+        android:title="@string/ARHIVE"/>
+    <item
+        android:id="@+id/id_setting_item_menu"
+        android:title="@string/settings_label"/>
+    <item
+        android:id="@+id/id_card_menu_complete_all"
+        android:title="@string/complete_all"
+        />
+
+</menu>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:name="App"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/icon_gold_monet"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon_gold_monet"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:windowSoftInputMode="adjustNothing"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".ZarplataActivity"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".dialogs.NewZapis"
+            android:label=""
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".setting.Setting"
+            android:label="@string/settings_label"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".setting.SettingAppearance"
+            android:label="@string/font_setting"
+            android:theme="@style/Theme.AppCompat" />
+
+        <activity
+            android:name=".setting.fontsetting.SettingFontSize"
+            android:label="@string/font_size"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".setting.fontsetting.SettingFontStyle"
+            android:label="@string/font_style"
+            android:theme="@style/Theme.AppCompat" />
+        <activity android:name=".LockActivity" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.a4165816.press.earning.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <!-- ressource file to create -->
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+
+</manifest>

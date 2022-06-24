@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_set_name_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_sort"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:theme="@style/Base.AlertDialog.AppCompat">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/set_name_card"
+        android:textColor="@color/text"/>
+
+    <EditText
+        android:id="@+id/id_name_card_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/shape_new_zapis"
+        android:gravity="bottom|center_horizontal"
+        android:inputType=""
+        android:padding="5dp"
+        android:textColor="@color/text"
+        android:textSize="14sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:paddingEnd="30dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingStart="30dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:id="@+id/id_button_set_name_cansel"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/CANCEL"
+            android:textAlignment="gravity"
+            android:textColor="@color/redButton"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/id_button_set_name_ok"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/OK"
+            android:textAlignment="gravity"
+            android:textColor="@color/greenButton"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</LinearLayout>

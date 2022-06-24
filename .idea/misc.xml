@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/myFolder/zarplata/app/src/main/res/layout/activity_arhive.xml" value="0.18802083333333333" />
+        <entry key="..\:/myFolder/zarplata/app/src/main/res/layout/activity_main.xml" value="0.18802083333333333" />
+        <entry key="..\:/myFolder/zarplata/app/src/main/res/layout/activity_prosmotr.xml" value="0.358695652173913" />
+        <entry key="..\:/myFolder/zarplata/app/src/main/res/layout/activity_zarplata.xml" value="0.358695652173913" />
+        <entry key="..\:/myFolder/zarplata/app/src/main/res/layout/calculator.xml" value="0.18802083333333333" />
+        <entry key="..\:/myFolder/zarplata/app/src/main/res/layout/card_info_window.xml" value="0.18802083333333333" />
+        <entry key="..\:/myFolder/zarplata/app/src/main/res/layout/card_view.xml" value="0.18802083333333333" />
+        <entry key="..\:/myFolder/zarplata/app/src/main/res/layout/change_import.xml" value="0.18802083333333333" />
+        <entry key="..\:/myFolder/zarplata/app/src/main/res/layout/choose_one_or_last.xml" value="0.18802083333333333" />
+        <entry key="..\:/myFolder/zarplata/app/src/main/res/layout/color_picker_pref_view.xml" value="0.18802083333333333" />
+        <entry key="..\:/myFolder/zarplata/app/src/main/res/layout/info.xml" value="0.33" />
+        <entry key="..\:/myFolder/zarplata/app/src/main/res/layout/item_day_period_spinner.xml" value="0.18802083333333333" />
+        <entry key="..\:/myFolder/zarplata/app/src/main/res/layout/new_zapis.xml" value="0.18802083333333333" />
+        <entry key="..\:/myFolder/zarplata/app/src/main/res/layout/page_basscode.xml" value="0.18802083333333333" />
+        <entry key="..\:/myFolder/zarplata/app/src/main/res/layout/period_window.xml" value="0.18802083333333333" />
+        <entry key="..\:/myFolder/zarplata/app/src/main/res/layout/schet_za_1_dey.xml" value="0.18802083333333333" />
+        <entry key="..\:/myFolder/zarplata/app/src/main/res/layout/schet_za_1_dey_sort_date.xml" value="0.18802083333333333" />
+        <entry key="..\:/myFolder/zarplata/app/src/main/res/layout/screen_dialog.xml" value="0.18802083333333333" />
+        <entry key="..\:/myFolder/zarplata/app/src/main/res/layout/set_name_card.xml" value="0.18802083333333333" />
+        <entry key="..\:/myFolder/zarplata/app/src/main/res/layout/setting_activity.xml" value="0.18802083333333333" />
+        <entry key="..\:/myFolder/zarplata/app/src/main/res/layout/sort.xml" value="0.18802083333333333" />
+        <entry key="..\:/myFolder/zarplata/app/src/main/res/layout/sort_ard.xml" value="0.18802083333333333" />
+        <entry key="..\:/myFolder/zarplata/app/src/main/res/layout/title_screen.xml" value="0.18802083333333333" />
+        <entry key="..\:/myFolder/zarplata/app/src/main/res/menu/card_main_menu.xml" value="0.18802083333333333" />
+        <entry key="..\:/myFolder/zarplata/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.196" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/id_zarplata_general_linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="false"
+    android:background="@color/white"
+    tools:context=".ZarplataActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:contentInsetEndWithActions="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_scrollFlags="scroll"/>
+
+
+    <include
+        android:id="@+id/period"
+        layout="@layout/period_window"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+
+
+        />
+
+    <LinearLayout
+        android:id="@+id/id_info_tablo_for_zarplata_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/cent"
+        android:orientation="horizontal"
+        android:paddingStart="7dp"
+        android:paddingLeft="7dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="7dp"
+        android:paddingRight="7dp"
+        android:paddingBottom="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/period">
+
+        <TextView
+            android:id="@+id/zarplata_title_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="@string/NUMBER"
+            android:textAllCaps="false"
+            android:textColor="@color/color_text_zagolovki_zarplata"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/zarplata_title_summa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:text="@string/SUMMASMALL"
+            android:textAllCaps="false"
+            android:textColor="@color/color_text_zagolovki_zarplata"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/zarplata_title_avans"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:text="@string/cash_advance_small"
+            android:textAllCaps="false"
+            android:textColor="@color/color_text_zagolovki_zarplata"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/zarplata_title_zametka"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:text="@string/NOTESMALL"
+            android:textAllCaps="false"
+            android:textColor="@color/color_text_zagolovki_zarplata"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/zarplata_title_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="11"
+            android:freezesText="false"
+            android:gravity="center"
+            android:text="@string/DATESMALL"
+            android:textAllCaps="false"
+            android:textColor="@color/color_text_zagolovki_zarplata"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/id_recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="3dp"
+        android:isScrollContainer="true"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbarThumbVertical="@color/cent"
+        android:scrollbars="vertical"
+        android:soundEffectsEnabled="false"
+        android:splitMotionEvents="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toTopOf="@+id/id_card_for_all_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_info_tablo_for_zarplata_layout">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/isNullItemInfoZ"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/punctir"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/id_card_for_all_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_info_tablo_for_zarplata_layout">
+
+        <TextView
+            android:id="@+id/add_button_is_not_zapis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/add_info_add_zapis"
+            android:textColor="@color/color_normal"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_card_for_all_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/cent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/layout_h"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="3dp">
+
+            <TextView
+                android:id="@+id/card_title_vsego_z"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="11"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="@string/EARNING_small"
+                android:textAlignment="gravity"
+                android:textColor="@color/color_text_zagolovki_zarplata"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/card_title_avans_z"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="@string/cash_advance_small"
+                android:textAlignment="gravity"
+                android:textColor="@color/color_text_zagolovki_zarplata"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/card_title_ostatok_z"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="11"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="@string/THE_REST_small"
+                android:textAlignment="gravity"
+                android:textColor="@color/color_text_zagolovki_zarplata"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/color_polosa_razdelitel"
+            android:orientation="horizontal">
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/obshee_dengi"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/cent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/id_summ_all_money"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:gravity="center_horizontal|center"
+                android:paddingStart="1dp"
+                android:paddingLeft="1dp"
+                android:paddingEnd="1dp"
+                android:paddingRight="1dp"
+                android:textAlignment="gravity"
+                android:textColor="@color/color_vsego_card"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:id="@+id/id_polosa_sleva"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:background="@color/color_polosa_razdelitel"
+                android:orientation="horizontal">
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/id_summ_avans"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:gravity="center"
+                android:paddingStart="1dp"
+                android:paddingLeft="1dp"
+                android:paddingEnd="1dp"
+                android:paddingRight="1dp"
+                android:textAlignment="gravity"
+                android:textColor="@color/color_avans_card"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:id="@+id/id_polosa_spravo"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:background="@color/color_polosa_razdelitel"
+                android:orientation="horizontal">
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/id_summ_money_k_vidache"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:gravity="center_horizontal|center"
+                android:paddingStart="1dp"
+                android:paddingLeft="1dp"
+                android:paddingEnd="1dp"
+                android:paddingRight="1dp"
+                android:textAlignment="gravity"
+                android:textColor="@color/color_ostatok_card"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

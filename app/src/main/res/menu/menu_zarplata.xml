@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <!--tools:context="com.a4165816.press.zarplata.com.a4165816.press.earnings.ZarplataActivity"-->
+
+    <item
+        android:id="@+id/id_dobavit"
+        android:icon="@drawable/ic_add"
+        android:title="@string/add"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/id_sort_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:icon="@drawable/ic_sort"
+        android:title="@string/sort"
+        app:showAsAction="always">
+    </item>
+    <item
+        android:id="@+id/id_period"
+        android:icon="@drawable/ic_period"
+        android:title="@string/period"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/id_set_name_titles"
+        android:title="@string/name_header"/>
+    <item
+        android:id="@+id/id_set_arhive"
+        android:title="@string/COMPLETE_ACCOUNTING"/>
+    <item
+        android:id="@+id/id_send"
+        android:title="@string/send"/>
+    <item
+        android:id="@+id/id_delete_all"
+        android:title="@string/delete_all"
+        />
+    <item
+        android:id="@+id/id_setting_item_menu_zarplataactivity"
+        android:title="@string/settings_label"/>
+</menu>

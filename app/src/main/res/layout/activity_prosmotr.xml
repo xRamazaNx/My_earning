@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/shape_sort"
+              android:orientation="vertical"
+              android:paddingBottom="15dp"
+              android:paddingLeft="5dp"
+              android:paddingRight="5dp"
+              android:paddingTop="9dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="2dp">
+
+        <TextView
+            android:id="@+id/title_summa_prosmotr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:text="@string/SUMMA"
+            android:textAllCaps="false"
+            android:textColor="@color/text"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/title_avans_prosmotr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:text="@string/cash_advance"
+            android:textAllCaps="false"
+            android:textColor="@color/text"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/title_date_prosmotr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:text="@string/DATE"
+            android:textAllCaps="false"
+            android:textColor="@color/text"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/id_colichestvo_rulonov_1_kolona_prosmotr"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="10"
+            android:background="@drawable/shape_new_zapis"
+            android:gravity="center"
+            android:maxHeight="70dp"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:textAlignment="center"
+            android:textColor="@color/text"
+            android:textSize="16sp"
+            tools:text="100"/>
+
+        <TextView
+            android:id="@+id/id_avans_prosmotr"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="10"
+            android:background="@drawable/shape_new_zapis"
+            android:gravity="center"
+            android:maxHeight="70dp"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:textAlignment="center"
+            android:textColor="@color/text"
+            android:textSize="16sp"
+            tools:text="100"/>
+
+        <TextView
+            android:id="@+id/id_data_prosmotr"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="10"
+            android:background="@drawable/shape_new_zapis"
+            android:gravity="center"
+            android:maxHeight="70dp"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/text"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            tools:text="dn, 11,11,2017"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title_note_prosmotr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="2dp"
+        android:gravity="center"
+        android:text="@string/NOTE"
+        android:textColor="@color/text"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:background="@drawable/shape_new_zapis"
+        android:orientation="vertical"
+        android:paddingBottom="3dp">
+
+        <TextView
+            android:id="@+id/id_comment_prosmotr"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="bottom|center_horizontal"
+            android:textColor="@color/text"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:text="заметка"/>
+
+    </LinearLayout>
+
+</LinearLayout>
