@@ -21,7 +21,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.press.myearnings.R;
-import com.press.myearnings.dialogs.ColorPickerDialog;
+import com.press.myearnings.dialogs.color.ColorPickerDialog;
 import com.press.myearnings.model.Dannie;
 import com.press.myearnings.setting.fontsetting.SettingFontSize;
 import com.press.myearnings.setting.fontsetting.SettingFontStyle;
@@ -281,15 +281,16 @@ public class SettingAppearance extends PreferenceActivity implements SharedPrefe
 
             private void showColorDialog(final View view) {
 
-                ColorPickerDialog colorPickerDialog;
-                colorPickerDialog = new ColorPickerDialog(SettingAppearance.this, new ColorPickerDialog.OnColorChangedListener() {
-                    @Override
-                    public void colorChanged(int color) {
-                        ((TextView) view).setTextColor(color);
-                        setCyrentColorForText();
-                    }
-                },
-                        ((TextView) view).getCurrentTextColor());
+                ColorPickerDialog colorPickerDialog = new ColorPickerDialog(
+                        SettingAppearance.this,
+                        ((TextView) view).getCurrentTextColor()
+                );
+                colorPickerDialog.setHexValueEnabled(true);
+                colorPickerDialog.setOnColorChangedListener(color -> {
+                    ((TextView) view).setTextColor(color);
+                    setCyrentColorForText();
+                });
+
                 colorPickerDialog.show();
             }
         };
